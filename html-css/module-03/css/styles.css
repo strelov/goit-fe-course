@@ -3,25 +3,45 @@ body {
     color: #626262;
     font-size: 14px;
     line-height: 24px;
-  }
-
-  header a {
-    color: #626262;
     font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    
   }
 
-  header a:hover {
+
+header {
+    
+    margin-left: 26%;
+    margin-right: calc(26% - 4px);
+  }
+
+
+header a {
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;   
+    text-align: center;    
+  }
+
+header a:hover {
     color: #03a9f4; 
   }
 
-  li {
+header ul {
+
+    /*Где-то здесь затык. Не могу понять в чем причина. Я сделал отступы Хэдера по 26%, 
+    и под каждый пункт заложил по 12%. Но это почему-то не работает... */
+    
+}
+  
+header ul li {
+    display: inline-block;
     list-style-type: none; /* Убираем маркеры */
+    width: 12%;
+    margin: auto;
+    text-align: center;    
    }
 
-.ubuntu {
+
+.additional_description {
     font-family: "Ubuntu", "Arial", sans-serif;
     color: #c7c1b6;
     font-weight: 300;
@@ -37,16 +57,63 @@ h2 {
 
 }
 
+/* При масштабировании страницы иногда прыгает вертикальное позиционирование блоков.
+Немогу понять почему...*/
+
 .block {
     display: inline-block;
-    width: 50%;
-}
+    width: 35%;
+    margin-left: 12%;
+    margin-right: 6%; 
+    margin-top: 0%;
+          
+   }
 
 .block2 {
     display: inline-block;
-    width: calc(50% - 4px);
+    width: calc(35% - 4px);
+    margin-right: 12%;
+    margin-top: 0%;  
+    
+    }
+
+footer {
+    box-sizing: border-box;
+    margin: auto;
+    border: #626262 solid 1px;
+    width: 200px;
+    text-align: center;
+} 
+
+footer a { 
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #626262;
+    
+          }
+
+img
+{
+    width: 100%;
 }
 
-footer { 
-    text-align: center;
+.empty { height: 50px;}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
