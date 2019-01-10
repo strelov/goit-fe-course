@@ -1,3 +1,9 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+
 body {
     font-family: "Playfair Display", "Arial", sans-serif;
     color: #626262;
@@ -9,8 +15,9 @@ body {
 
 header {
     
+    margin: auto;
     margin-left: 26%;
-    margin-right: calc(26% - 4px);
+  margin-right: 26%; 
   }
 
 
@@ -29,15 +36,15 @@ header ul {
 
     /*Где-то здесь затык. Не могу понять в чем причина. Я сделал отступы Хэдера по 26%, 
     и под каждый пункт заложил по 12%. Но это почему-то не работает... */
-    
+   
 }
   
 header ul li {
     display: inline-block;
     list-style-type: none; /* Убираем маркеры */
-    width: 12%;
-    margin: auto;
-    text-align: center;    
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 3%;    
    }
 
 
