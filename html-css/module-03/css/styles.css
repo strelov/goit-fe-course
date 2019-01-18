@@ -73,6 +73,7 @@ h2 {
     margin-left: 12%;
     margin-right: 6%; 
     margin-top: 0%;
+    vertical-align: top;
           
    }
 
@@ -80,7 +81,8 @@ h2 {
     display: inline-block;
     width: calc(35% - 4px);
     margin-right: 12%;
-    margin-top: 0%;  
+    margin-top: 0%; 
+    vertical-align: top; 
     
     }
 
