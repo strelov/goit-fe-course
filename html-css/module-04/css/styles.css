@@ -52,11 +52,17 @@ body {
   width: 255px;
   height: 282px;
   background-color: #e9f0fd;
+  position: relative;
 }
 
 .content_image>img {
   
   margin: auto;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
