@@ -1,69 +1,81 @@
-
-
-*
-{
-margin: auto;
-padding: 0;
+* {
+    margin: 0 auto;
+    padding: 0;
+    
 }
 
 body {
-  width: 1600px;
+    width: 1600px;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    color: #626262;
+    font-size: 14px;
+    font-weight: 400; 
+    color: #515151;
+    margin: auto;
 }
 
 header {
-  width: 1100px;
-  position: relative;
-  margin: auto;
-}
+    width: 1100px;
+    position: relative;
+    margin: 45px 0 35px 250px;
+    }
 
 .logo {
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 32px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 .logo::first-letter {
-  color: #1abc9c;
+    color: #1abc9c;
 }
 
 header li:hover {
-  color: #1abc9c; 
+    color: #1abc9c;
 }
 
 header ul {
-position: absolute;
-right: 0px;
-line-height: 32px;
-font-size: 14px;
-text-transform: uppercase;
-font-weight: 700; 
- 
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
+    color: #0f0101;
 }
 
 header ul li {
-  display: inline-block;
-  list-style-type: none; /* Убираем маркеры */
-  text-align: center;
-  margin-right: 3%;
-  margin-left: 3%;    
- }
+    display: inline-block;
+    list-style-type: none;
+    /* Убираем маркеры */
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 3%;
+}
 
+.slider {
+    
+    background-image: url('../img/slide4.jpg');
+    background-size: cover;
+     width: 1645px;
+    height: 600px; 
+    position: relative;
+}
 
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
