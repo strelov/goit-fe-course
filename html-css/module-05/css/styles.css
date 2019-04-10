@@ -80,11 +80,13 @@ h2 {
     font-weight: 400;
 }
 
+button { text-decoration: none; }
+
+
 .slider button {
     display: inline-block;
     size: 105px;
     border: none;
-    text-decoration: none;
     width: 105px;
     height: 105px;
     font-size: 38px;
@@ -138,38 +140,115 @@ h2 {
     display: block;
     width: 1100px;
     max-width: 100%;
-    position: relative;
-}
+    padding-bottom: 80px;
+   }
 
-.goods li {
+.good {
+    position: relative;
     display: inline-block;
     list-style-type: none;
-    height: 322px;
+    height: 320px;
     width: 250px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 700;
     }
+
+.image_wrapper { /*Контейнер картинки с кнопками и затемнением по наведению */
+    position: relative;
+    width: 250px;
+    height: 280px;
+}
+
 
 .good:not(:nth-child(4n)) {
         margin-right: 20px;
       }
 
-.good img { 
-    display: block;
-    max-width: 100%; 
-    }
+.good:hover .shade {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: hsla(0, 0%, 0%, 0.3);
+            z-index: 1;
+            width: 90%;
+            height: 90%;
+        }
 
-.good:hover .good:before {
-    display: block;
-    content: '';
-    position: absolute;
-    background-color: hsla(0, 0%, 0%, 0.3);
-    z-index: 1;
-    width: 200px;
-    height: 300px;
+.good:hover .small { opacity: 1;}
+.good:hover .wide_one { opacity: 1;}
+.good:hover .good_name { background-color: #1abc9c;}
+.good:hover .good_price { background-color: #7fd9c7;}
+
+
+.small {
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    border: solid 2px #ffffff;
+    background: none;
+    z-index: 2;
 }
 
+.s_like {
+    position: absolute;
+    top: 70px;
+    left: 44px;
+}
 
+.s_share {
+    position: absolute;
+    top: 70px;
+    left: 102px;
+}
 
+.s_postpone {
+    position: absolute;
+    top: 70px;
+    left: 160px;
+    }
 
+.wide_one {
+    position: absolute;
+    content: "add to carrd";
+    text-transform: uppercase;
+    text-align: right;
+    top: 128px;
+    left: 44px;
+    opacity: 0;
+    width: 166px;
+    height: 50px;
+    border: solid 2px #ffffff;
+    background: none;
+    z-index: 2;
+}    
+
+.good_name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    height: 40px;
+    background-color: #323232;
+    line-height: 40px;
+   padding-left: 10px;   
+   
+}
+
+.good_price {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    height: 40px;
+    background-color: #8c8c8c;
+    line-height: 40px;
+   text-align: center;   
+   }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
