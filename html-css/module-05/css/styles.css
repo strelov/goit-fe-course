@@ -250,6 +250,17 @@ button { text-decoration: none; }
    text-align: center;   
    }
 
+footer {
+    font-size: 16px;
+    color: #fefefe;
+    background-color: #323232;
+    text-align: center;
+    line-height: 88px;
+    }   
+
+.green { color: #46bfa9;}
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
